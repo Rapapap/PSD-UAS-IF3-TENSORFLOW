@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ```
 2. Jalankan program Streamlit
 ```bash
-streamlit run 📊_Dashboard.py
+streamlit run Dashboard.py
 ```
 3. Jika sudah selesai dan akan keluar dari program, pastikan environment sudah di nonaktifkan, dengan cara
 ```bash
