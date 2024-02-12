@@ -1,6 +1,6 @@
 # PSD-UAS-IF3-TENSORFLOW
 >Untuk mengakses dashboard secara online, klik link dibawah ini <br>
-<a href="https://psd-uas-if1-folium.streamlit.app/" style="font-size: 1.5rem;">Web Streamlit Online</a>
+<a href="https://bike-sharing-dashboard-tensorflow.streamlit.app/" style="font-size: 1.5rem;">Web Streamlit Online</a>
 
 ## Setup Environment:
 > Ini penting agar setiap orang menjalankan program dengan versi _dependencies_ yang sama.
