@@ -9,7 +9,7 @@ st.set_page_config(page_title="Rava", page_icon="1️⃣", layout="wide")
 init()
 
 # Load dataset
-hour_data = pd.read_csv("/dataset/hour.csv")
+hour_data = pd.read_csv("dataset/hour.csv")
 
 # Membuat Peak Hour Weekday
 hour_data["dteday"] = pd.to_datetime(hour_data["dteday"])
