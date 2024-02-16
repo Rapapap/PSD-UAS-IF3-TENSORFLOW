@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from utils import init
 import matplotlib.pyplot as plt
+import plotly.express as px
 
 st.set_page_config(page_title="Apriana", page_icon="2️⃣", layout="wide")
 
@@ -43,25 +44,15 @@ def create_day_weathersit_total(df):
     return day_weathersit_total
 
 def plot_day_temp_total(df):
-    fig, ax = plt.subplots()
     day_temp_total = create_day_temp_total(df)
-    plt.scatter(day_temp_total['temp'],day_temp_total['total'])
-    plt.xlabel('Temperature')
-    plt.ylabel('Jumlah')
-    plt.title('Penyebaran Data Jumlah Peminjam Sepeda dan Temperature Cuaca')
-    fig.set_size_inches(10,5)
-    st.pyplot(fig)
+    fig = px.scatter(day_temp_total, x='temp', y='total', title='Penyebaran Data Jumlah Peminjam Sepeda dan Temperature Cuaca', labels={'temp':'Temperature', 'total':'Jumlah'})
+    st.plotly_chart(fig)
 
 def plot_day_weathersit_total(df):
-    fig, ax = plt.subplots()
     day_weathersit_total = create_day_weathersit_total(df)
-    day_weathersit_total.plot(kind='bar', ax=ax)
-    plt.xlabel('Weather Situation')
-    plt.ylabel('Jumlah')
-    plt.title('Total Peminjam Sepeda Berdasarkan Cuaca')
-    fig.set_size_inches(10,5)
-    st.pyplot(fig)
-
+    fig = px.bar(day_weathersit_total, x=day_weathersit_total.index, y='total', title='Total Peminjam Sepeda Berdasarkan Cuaca', labels={'index':'Weather Situation', 'total':'Jumlah'})
+    st.plotly_chart(fig)
+    
 # Daily Rentals
 st.subheader('Total Rentals')
 st.markdown('''
