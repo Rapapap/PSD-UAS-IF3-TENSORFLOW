@@ -41,8 +41,8 @@ with st.container():
 
 with st.container():
     # Visualisasi Tren Rental Sepeda Per Jam Tahun 2011
-    st.write('## Tren Rental Sepeda Per Jam Tahun 2011')
-    st.line_chart(hour_data_2011.set_index('dteday')['cnt'], width=500, height=300)
+    st.write('## Tren Rental Sepeda perjam Tahun 2011')
+    st.line_chart(hour_data_2011[['dteday', 'cnt']][::24].set_index('dteday'), use_container_width=True)
 
 
 
