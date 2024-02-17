@@ -1,6 +1,6 @@
 # PSD-UAS-IF3-TENSORFLOW
 >Untuk mengakses dashboard secara online, klik link dibawah ini <br>
-<a href="https://psd-uas-if3-tensorflow-g3ajbnxpozybqstjksfy76.streamlit.app/" style="font-size: 1.5rem;">Web Streamlit Online</a>
+<a href="https://psd-uas-if3-tensorflowgit-etyyyqhlave2c4jeobnm4b.streamlit.app/" style="font-size: 1.5rem;">Web Streamlit Online</a>
 
 ## Setup Environment:
 > Ini penting agar setiap orang menjalankan program dengan versi _dependencies_ yang sama.
