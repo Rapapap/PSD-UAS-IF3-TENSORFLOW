@@ -16,7 +16,8 @@ st.write('<hr>', unsafe_allow_html=True)
 st.text('Pertanyaan : Apakah pada setiap musim memengaruhi penjumlahan penyewa sepeda?')
 
 st.write("Menyiapkan data-data yang akan dipakai untuk proses analisis data. Dalam proyek data ini data yang akan dipakai adalah 'Bike Sharing Dataset', lebih tepatnya 'day.csv' dan 'hour.csv'")
-day_data = pd.read_csv('dataset\day.csv')
+
+day_data = pd.read_csv('dataset/day.csv')
 st.write("day.csv",day_data)
 
 # Mendapatkan Seluruh penyewa pada masing-masing musim

@@ -1,5 +1,3 @@
-import streamlit as st
-from utils import init
 
 st.set_page_config(page_title="Nina", page_icon="4️⃣", layout="wide")
 
@@ -52,3 +50,4 @@ ax.pie(
     
 ax.title('Perbandingan Anggota Registered dan Anggota Casual\n(Tahun 2011)')
 ax.show()
+
