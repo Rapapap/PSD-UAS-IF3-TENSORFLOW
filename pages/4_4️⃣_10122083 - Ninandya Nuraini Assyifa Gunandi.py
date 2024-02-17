@@ -51,4 +51,4 @@ ax.pie(
     )
     
 ax.title('Perbandingan Anggota Registered dan Anggota Casual\n(Tahun 2011)')
-plt.show()
+ax.show()
