@@ -19,7 +19,7 @@ with st.container(border=True, height=175):
     )
 
 # Load dataset
-hour_data = pd.read_csv("dataset\day.csv")
+hour_data = pd.read_csv("dataset/day.csv")
 
 # Dataframe yang akan ditampilkan
 data = {
