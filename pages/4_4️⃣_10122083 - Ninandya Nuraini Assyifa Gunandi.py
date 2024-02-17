@@ -17,7 +17,7 @@ st.text('Kelas      : IF3')
 st.write('<hr>', unsafe_allow_html=True)
 st.text('Pertanyaan : Berapa perbandingan anggota casual dan anggota registered pada tahun 2011??')
 
-st.write("Menyiapkan data-data yang akan dipakai untuk proses analisis data. Dalam proyek data ini data yang akan dipakai adalah 'Bike Sharing Dataset')
+st.write("Menyiapkan data-data yang akan dipakai untuk proses analisis data. Dalam proyek data ini data yang akan dipakai adalah 'Bike Sharing Dataset'")
 
 data = pd.read_csv('/content/drive/MyDrive/day.csv')
 data['dteday'] = pd.to_datetime(data['dteday'])
