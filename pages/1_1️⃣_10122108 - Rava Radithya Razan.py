@@ -80,6 +80,6 @@ with col2:
 
 # Menampilkan Grafik
 plot_peak_hours_plotly(peak_hours_weekday, peak_hours_weekend)
-st.expander("**Penjelasan Grafik**", expanded=False).write(
+st.expander("**:orange[penjelasan Grafik]**", expanded=False).write(
     "Grafik di atas menunjukkan rata-rata peminjaman sepeda per jam pada hari kerja dan akhir pekan. Dari grafik tersebut, kita dapat melihat bahwa peminjaman sepeda pada hari kerja memiliki dua puncak, yaitu pada jam 8 pagi dan jam 5 sore. Sedangkan pada akhir pekan, peminjaman sepeda cenderung stabil sepanjang hari, dengan puncak pada jam 1 siang. Grafik ini dapat memberikan informasi yang berguna dalam perencanaan dan pengelolaan sumber daya sepeda."
 )
