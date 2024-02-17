@@ -38,3 +38,17 @@ df_registered_casual = pd.DataFrame({'Type' : Type, 'Total' : jumlah})
 st.text("Data anggota registered dan casual pada tahun 2011")
 display(df_registered_casual)
 display(df_registered_casual.dtypes)
+
+
+fig, ax = plt.subplots()
+ax.pie(
+    df_registered_casual['Total'],
+    labels=df_registered_casual['Type'],
+    autopct='%1.1f%%',
+    startangle=90,
+    colors=['#84c6da', '#50c3c9'],
+    wedgeprops={"linewidth": 1.5, "edgecolor": "white"}
+    )
+    
+ax.title('Perbandingan Anggota Registered dan Anggota Casual\n(Tahun 2011)')
+plt.show()
