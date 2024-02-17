@@ -44,6 +44,14 @@ with st.container():
     st.write('## Tren Rental Sepeda perjam Tahun 2011')
     st.line_chart(hour_data_2011[['dteday', 'cnt']][::24].set_index('dteday'), use_container_width=True)
 
+with st.expander("Penjelasan rental sepeda Tren harian dan Tren perjam pada tahun 2011"):
+    st.markdown("**Tren Harian:**")
+    st.write("Jumlah penyewaan sepeda harian cenderung naik dan turun setiap hari.")
+    st.write("Puncak penyewaan terjadi pada beberapa titik tertentu dalam tahun 2011, di mana permintaan paling tinggi.")
+    st.markdown("**Tren Per Jam:**")
+    st.write("Tren penyewaan sepeda per jam pada tahun 2011 menunjukkan pola harian yang konsisten.")
+    st.write("Puncak penyewaan per jam cenderung terjadi pada jam-jam tertentu dalam sehari, dengan kemungkinan puncak pada jam-jam tertentu seperti jam sibuk sebelum atau setelah jam kerja.")
+
 
 
 
