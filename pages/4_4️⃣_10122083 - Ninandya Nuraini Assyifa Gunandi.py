@@ -11,7 +11,7 @@ init()
 
 st.title("Ninandya Nuraini Assyifa Gunandi")
 st.title('Informasi Diri')
-st.text('Nama       : Ninandya Nuraini Assyifa Gunandi)
+st.text('Nama       : Ninandya Nuraini Assyifa Gunandi')
 st.text('Nim        : 10122083')
 st.text('Kelas      : IF3')
 st.write('<hr>', unsafe_allow_html=True)
